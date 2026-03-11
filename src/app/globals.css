@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-party-orange: #ff522e;
+  --color-party-orange-hover: #e04425;
+  --color-party-orange-light: rgba(255, 82, 46, 0.08);
+  --color-party-blue: #2038f0;
+  --color-party-blue-hover: #1a2fc0;
+  --color-party-blue-light: rgba(32, 56, 240, 0.06);
+  --color-dept-lapid: #f59e0b;
+  --color-dept-knesset: #2038f0;
+  --color-dept-field: #10b981;
+  --color-dept-digital: #8b5cf6;
+  --color-dept-spokesperson: #ff522e;
+  --font-sans: var(--font-heebo);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f9fc;
+  color: #1a1a2e;
+  font-family: var(--font-heebo), 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+
+/* Grid cell hover */
+.gantt-cell:hover {
+  background: rgba(32, 56, 240, 0.04);
+}
+
+.gantt-cell-shabbat {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.gantt-cell-today {
+  background: rgba(32, 56, 240, 0.06);
 }
