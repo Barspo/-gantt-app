@@ -1,4 +1,4 @@
-export type Department = 'lapid' | 'knesset' | 'field' | 'digital' | 'spokesperson' | 'tech_data'
+export type Department = 'lapid' | 'knesset' | 'field' | 'digital' | 'spokesperson' | 'campaigns'
 
 export interface GanttEvent {
   id: number

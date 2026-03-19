@@ -1,8 +1,9 @@
-import { getDb } from '@/lib/db'
+import { getDb, runMigrations } from '@/lib/db'
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(request: NextRequest) {
   const sql = getDb()
+  await runMigrations()
   const { searchParams } = new URL(request.url)
   const month = searchParams.get('month')
   const year = searchParams.get('year')

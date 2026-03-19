@@ -31,16 +31,16 @@ export const DEPARTMENTS: Record<Department, DepartmentInfo> = {
     color: '#ff522e',
     lightColor: 'rgba(255, 82, 46, 0.10)',
   },
-  tech_data: {
-    id: 'tech_data',
-    name: 'טכנולוגיה ודאטה',
+  campaigns: {
+    id: 'campaigns',
+    name: 'קמפיינים',
     color: '#06b6d4',
     lightColor: 'rgba(6, 182, 212, 0.12)',
   },
 }
 
 export const DEPARTMENT_ORDER: Department[] = [
-  'lapid', 'knesset', 'field', 'digital', 'spokesperson', 'tech_data'
+  'lapid', 'knesset', 'field', 'digital', 'spokesperson', 'campaigns'
 ]
 
 export const PARTY_COLORS = {
